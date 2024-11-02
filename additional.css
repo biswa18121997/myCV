@@ -1,0 +1,50 @@
+
+
+   .image-container {
+    position: relative;
+    display: inline;
+  }
+
+   .glowing-border {
+    position: absolute;
+    inset: 0;
+    border: 8px solid transparent;
+    
+    box-shadow: 0 0 40px rgba(214, 250, 6, 0.6);
+    transition: box-shadow 0.5s linear;
+  }
+
+
+
+  .image-container:hover .glowing-border {
+    box-shadow: 0 0 20px rgb(220, 10, 10);
+    animation: glow 2s infinite;
+  }
+
+  .image-container:hover .image {
+    transform: rotate(360deg);
+  }
+
+  @keyframes glow {
+    0%, 100% {
+      box-shadow: 0 0 50px rgba(248, 47, 208, 0.6);
+    }
+    20% {
+      box-shadow: 0 0 20px rgb(232, 4, 4);
+    }
+    40% {
+      box-shadow: 0 0 20px rgb(4, 142, 166);
+    }
+    60% {
+      box-shadow: 0 0 20px rgb(120, 236, 11);
+    }
+  
+  80% {
+    box-shadow: 0 0 20px rgba(243, 241, 241, 0.32);
+  }
+
+
+  }
+
+ 
+  
